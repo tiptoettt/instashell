@@ -37,5 +37,4 @@ Script uses an Android ApkSignature to perform authentication in addition using 
 
 ### Donate!
 Support the authors:
-<script src="https://liberapay.com/thelinuxchoice/widgets/button.js"></script>
 <noscript><a href="https://liberapay.com/thelinuxchoice/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
