@@ -33,7 +33,7 @@ sudo ./install.sh
 ### How it works?
 
 Script uses an Android ApkSignature to perform authentication in addition using TOR and rotating the ip address to avoid blocking. 
-
+The script uses Instagram-py algorithm, see the project at: https://github.com/antony-jr/instagram-py
 
 ### Donate!
 Support the authors:
