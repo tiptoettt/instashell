@@ -103,3 +103,5 @@ done
 
 bruteforcer
 
+$ service tor start
+$ ./instashell.sh ___shugu___
